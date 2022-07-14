@@ -1,4 +1,3 @@
-1
 cygwin
 C:/mingw64/bin/g++ 0.cc -IC:/glfw/include -LC:/glfw/lib-mingw-w64 -l:libglfw3.a -lopengl32 -lglfw3 -lgdi32
 
@@ -7,12 +6,3 @@ C:\mingw64\bin\g++ 0.cc -IC:\glfw\include -LC:\glfw\lib-mingw-w64 -l:libglfw3.a 
 
 download 64 bit windows binary
 https://www.glfw.org/download.html
-
-2
-powershell
-gcc -o a.exe a.c .\src\glad.c -lopengl32 -lglfw3 -lgdi32
-./a
-
-may need to change 
-#include <glad/gl.h> -> #include <glad/glad.h>
-gladLoadGL(glfwGetProcAddress) -> gladLoadGL()
