@@ -14,8 +14,7 @@ visual studio
 https://www.youtube.com/watch?v=OR4fNpBjmq8&t=530s
 
 powershell
-gcc -o a.exe a.c .\src\glad.c -lopengl32 -lglfw3 -lgdi32
-./a
+gcc 0.c .\src\glad.c -lopengl32 -lglfw3 -lgdi32
 
 may need to change 
 #include <glad/gl.h> -> #include <glad/glad.h>
