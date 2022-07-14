@@ -6,3 +6,6 @@ C:\mingw64\bin\g++ 0.cc -IC:\glfw\include -LC:\glfw\lib-mingw-w64 -l:libglfw3.a 
 
 download 64 bit windows binary
 https://www.glfw.org/download.html
+
+glad
+https://glad.dav1d.de/
