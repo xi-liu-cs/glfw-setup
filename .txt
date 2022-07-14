@@ -1,11 +1,25 @@
+1
+download 64 bit windows binary
+https://www.glfw.org/download.html
+
 cygwin
 C:/mingw64/bin/g++ 0.cc -IC:/glfw/include -LC:/glfw/lib-mingw-w64 -l:libglfw3.a -lgdi32 -lopengl32
 
 powershell
 C:\mingw64\bin\g++ 0.cc -IC:\glfw\include -LC:\glfw\lib-mingw-w64 -l:libglfw3.a -lgdi32 -lopengl32
 
-download 64 bit windows binary
-https://www.glfw.org/download.html
-
-glad
+2
+glad.c
 https://glad.dav1d.de/
+mv glad/include glfw/include
+mv glad/src glfw/src
+
+linmath.h
+https://github.com/glfw/glfw/blob/master/deps/linmath.h
+mv linmath.h C:/glfw/include
+
+cygwin
+C:/mingw64/bin/g++ 0.cc C:/glfw/src/glad.c -IC:/glfw/include -LC:/glfw/lib-mingw-w64 -l:libglfw3.a -lgdi32 -lopengl32
+
+powershell
+C:\mingw64\bin\g++ 0.cc C:\glfw\src\glad.c -IC:\glfw\include -LC:\glfw\lib-mingw-w64 -l:libglfw3.a -lgdi32 -lopengl32
